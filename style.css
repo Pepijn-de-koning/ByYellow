@@ -1,17 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
 }
-
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
 .container {
-  grid-template-columns: 40px 50px auto 50px 40px;
-  grid-template-rows: 25% 100px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 50px;
+  text-align: center;
+  width: 100%;
 }
 
 .banner {
-  background-color: #FBBB00;
+  background-color: #fbbb00;
 }
 
 .byellow-logo {
   width: 30em;
 }
+
+/* Nav */
+nav {
+  height: 10vh;
+  background-color: #fbbb00;
+}
+.nav-links {
+  display: flex;
+}
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+/* End Nav */
