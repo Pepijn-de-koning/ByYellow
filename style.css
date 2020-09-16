@@ -2,6 +2,7 @@
 * {
   padding: 0;
   margin: 0;
+  behavior: "smooth";
 }
 
 body {
@@ -33,40 +34,43 @@ nav {
   text-decoration: none;
   font-size: 16px;
 }
-@media screen and (max-width: 768px) {
-  .line {
-    width: 30px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-  }
-  nav {
-    position: relative;
-  }
-  .hamburger {
-    position: absolute;
-    cursor: pointer;
-    right: 5%;
-    top: 50%;
-    transform: translate(-5%, -50%);
-  }
 
-  .nav-links {
-    position: fixed;
-    background-color: #fbbb00;
-    height: 100vh;
-    width: 100%;
-    flex-direction: column;
-    clip-path: circle(0px at 95% 5%);
-    -webkit-clip-path: circle(0px at 95% 5%);
-    transition: all 1s ease-out;
-    pointer-events: none;
-  }
-  .nav-links.open {
-    clip-path: circle(2000px at 95% 5%);
-    -webkit-clip-path: circle(2000px at 95% 5%);
-    pointer-events: all;
-  }
+nav {
+  position: relative;
+}
+.hamburger {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  transform: translate(-3%, -50%);
+  z-index: 8;
+  color: white;
+  font-size: 2em;
+}
+
+.nav-links {
+  position: fixed;
+  background-color: #fbbb00;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  clip-path: circle(0px at 95% 5%);
+  -webkit-clip-path: circle(0px at 95% 5%);
+  transition: all 1s ease-out;
+  pointer-events: none;
+}
+.nav-links.open {
+  clip-path: circle(2100px at 95% 5%);
+  -webkit-clip-path: circle(2100px at 95% 5%);
+  pointer-events: all;
+}
+.nav-item {
+  font-size: 25px;
+}
+#bedrijf-page {
+  height: 5000px;
 }
 /* End Nav */
 
@@ -75,7 +79,6 @@ nav {
   background-color: #fbbb00;
   display: flex;
   justify-content: center;
-
 }
 
 .banner {
