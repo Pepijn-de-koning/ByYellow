@@ -15,50 +15,6 @@ body {
 
 /* Nav */
 
-.nav-links {
-  display: flex;
-  list-style: none;
-  width: 50%;
-  height: 100%;
-  align-items: center;
-  margin-left: auto;
-  padding-top: 20%;
-}
-.nav-item {
-  color: white;
-  text-decoration: none;
-  font-size: 25px;
-}
-.hamburger {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 20px;
-  left: 20px;
-  cursor: pointer;
-  z-index: 8;
-  font-size: 2em;
-}
-
-.nav-links {
-  position: fixed;
-  background-color: #fbbb00;
-  height: 100vh;
-  width: 100%;
-  flex-direction: column;
-  clip-path: circle(0px at 5% 0%);
-  -webkit-clip-path: circle(0px at 5% 0%);
-  transition: all 1s ease-out;
-  pointer-events: none;
-}
-.nav-links.open {
-  clip-path: circle(2100px at 5% 0%);
-  -webkit-clip-path: circle(2100px at 5% 0%);
-  pointer-events: all;
-}
-
-#bedrijf-page {
-  height: 5000px;
-}
 /* End Nav */
 
 /* Homepage */
