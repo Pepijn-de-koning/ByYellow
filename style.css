@@ -1,38 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  scroll-behavior: "smooth";
-}
-
-body {
-  font-family: "Josefin Sans", sans-serif;
-}
-
-.flex {
-  display: flex;
-}
-
 /* Nav */
 
 /* End Nav */
 
 /* Homepage */
-#home-page {
-  background-color: #fbbb00;
-  display: flex;
-  justify-content: center;
-}
-
-.banner {
-  margin: auto;
-  width: 50%;
-  padding: 100px 0px 100px 0px;
-}
-
-.byellow-logo {
-  width: 60%;
-  max-width: 100%;
-}
 
 /* End Homepage */
