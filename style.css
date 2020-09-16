@@ -3,6 +3,11 @@
   margin: 0;
 }
 
+.container {
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 25% 100px auto;
+}
+
 .banner {
   background-color: #FBBB00;
 }
