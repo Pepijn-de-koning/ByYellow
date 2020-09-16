@@ -3,8 +3,13 @@
   padding: 0;
   margin: 0;
 }
+
 body {
   font-family: "Josefin Sans", sans-serif;
+}
+
+.flex {
+  display: flex;
 }
 
 /* Nav */
@@ -12,6 +17,7 @@ nav {
   height: 10vh;
   background-color: #fbbb00;
 }
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -21,6 +27,7 @@ nav {
   align-items: center;
   margin-left: auto;
 }
+
 .nav-item {
   color: white;
   text-decoration: none;
@@ -29,10 +36,14 @@ nav {
 /* End Nav */
 
 /* Homepage */
-.banner {
+#home-page {
   background-color: #fbbb00;
+  display: flex;
+  justify-content: center;
+
 }
-.byellow-logo {
-  width: 30em;
+
+.banner {
+  height: 20em;
 }
 /* End Homepage */
