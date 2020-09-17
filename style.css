@@ -54,5 +54,13 @@ p {
 
 .balk {
   margin-top: 10px;
-  float: right;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.cases {
+  font-size: 170px;
+  text-align: left;
+  margin-top: -105px;
 }
