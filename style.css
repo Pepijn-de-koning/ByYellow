@@ -23,7 +23,7 @@ body {
 }
 
 .banner {
-  background-color: #FBBB00;
+  background-color: #fbbb00;
   padding: 100px 0px 100px 0px;
 }
 
@@ -37,11 +37,11 @@ p {
 }
 
 .yellow {
-  color: #FBBB00;
+  color: #fbbb00;
 }
 
 .red {
-  color: #EC7243
+  color: #ec7243;
 }
 
 .width {
@@ -49,7 +49,7 @@ p {
 }
 
 .figuren {
-  margin-top: -400px
+  margin-top: -400px;
 }
 
 .balk {
