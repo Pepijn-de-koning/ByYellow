@@ -85,6 +85,11 @@ p {
   color: white;
 }
 .geelvlak p {
+  padding-top: 1em;
+}
+.footer-text {
+  padding-top: 3em;
+  padding-left: 5%;
 }
 .klein-logo {
   height: 254px;
