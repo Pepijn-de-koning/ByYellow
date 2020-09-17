@@ -23,7 +23,7 @@ body {
 }
 
 .banner {
-  background-color: #FBBB00;
+  background-color: #fbbb00;
   padding: 250px 0px 250px 0px;
 }
 
@@ -37,11 +37,11 @@ p {
 }
 
 .yellow {
-  color: #FBBB00;
+  color: #fbbb00;
 }
 
 .red {
-  color: #EC7243
+  color: #ec7243;
 }
 
 .width {
@@ -49,7 +49,7 @@ p {
 }
 
 .figuren {
-  margin-top: -400px
+  margin-top: -400px;
 }
 
 .balk {
@@ -64,7 +64,29 @@ p {
   text-align: left;
   margin-top: -105px;
 }
-
 .video-background {
   width: 100%;
+}
+
+.footer {
+  display: flex;
+}
+.cases {
+  font-size: 170px;
+  text-align: left;
+  margin-top: -105px;
+}
+.geelvlak {
+  padding: 1em;
+  background-color: #fbbb00;
+  width: 60%;
+  max-height: 254px;
+  display: grid;
+  color: white;
+}
+.geelvlak p {
+}
+.klein-logo {
+  height: 254px;
+  margin-left: -128px;
 }
