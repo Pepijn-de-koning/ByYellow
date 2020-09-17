@@ -9,5 +9,10 @@
 .container {
   width: 100%;
   max-width: 1140px;
+
 }
- 
+
+.banner {
+  background-color: #FBBB00;
+  padding: 100px 0px 100px 0px;
+}
