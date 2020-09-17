@@ -3,13 +3,23 @@
 * {
   padding: 0;
   margin: 0;
+}
+
+body {
+  font-family: Josefin sans;
   scroll-behavior: "smooth";
+}
+
+.home-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .container {
   width: 100%;
   max-width: 1140px;
-
+  margin: auto;
 }
 
 .banner {
@@ -17,8 +27,13 @@
   padding: 100px 0px 100px 0px;
 }
 
+h2 {
+  font-size: 24px;
+  margin-top: 48px;
+}
+
 p {
-  font-family: Josefin sans;
+  font-size: 16px;
 }
 
 .yellow {
@@ -31,4 +46,13 @@ p {
 
 .width {
   width: 50%;
+}
+
+.figuren {
+  margin-top: -400px
+}
+
+.balk {
+  margin-top: 10px;
+  float: right;
 }
