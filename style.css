@@ -59,8 +59,25 @@ p {
   justify-content: space-between;
 }
 
+/* Footer */
+.footer {
+  display: flex;
+}
 .cases {
   font-size: 170px;
   text-align: left;
   margin-top: -105px;
 }
+.geelvlak {
+  padding: 1em;
+  background-color: #fbbb00;
+  width: 60%;
+  max-height: 254px;
+  display: grid;
+}
+
+.klein-logo {
+  height: 254px;
+  margin-left: -128px;
+}
+/* End Footer */
