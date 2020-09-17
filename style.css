@@ -16,3 +16,15 @@
   background-color: #FBBB00;
   padding: 100px 0px 100px 0px;
 }
+
+p {
+  font-family: Josefin sans;
+}
+
+.yellow {
+  color: #FBBB00;
+}
+
+.red {
+  color: #EC7243
+}
