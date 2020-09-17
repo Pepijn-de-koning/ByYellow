@@ -24,7 +24,7 @@ body {
 
 .banner {
   background-color: #FBBB00;
-  padding: 100px 0px 100px 0px;
+  padding: 250px 0px 250px 0px;
 }
 
 h2 {
@@ -63,4 +63,8 @@ p {
   font-size: 170px;
   text-align: left;
   margin-top: -105px;
+}
+
+.video-background {
+  width: 100%;
 }

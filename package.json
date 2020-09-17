@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Pepijn-de-koning/Byellow#readme",
   "dependencies": {
+    "aos": "^2.3.4",
     "package.json": "^2.0.1"
   },
   "devDependencies": {
