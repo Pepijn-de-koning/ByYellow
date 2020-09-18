@@ -51,7 +51,52 @@ p {
 .figuren {
   margin-top: -400px;
 }
+/* Cases */
+.cases-imgs {
+  display: grid;
+  grid-template-areas:
+    "pic1 pic1 pic2 pic2 pic3 pic3"
+    "pic1 pic1 pic4 pic4 pic3 pic3"
+    "pic5 pic5 pic4 pic4 pic6 pic6"
+    "pic7 pic7 pic8 pic8 pic9 pic9"
+    "pic7 pic7 pic10 pic10 pic9 pic9";
+  grid-gap: 5%;
+  padding: 10px;
+  justify-items: center;
+  padding-bottom: 15em;
+}
+.case-pic1 {
+  grid-area: pic1;
+}
+.case-pic2 {
+  grid-area: pic2;
+}
+.case-pic3 {
+  grid-area: pic3;
+}
+.case-pic4 {
+  grid-area: pic4;
+}
+.case-pic5 {
+  grid-area: pic5;
+}
+.case-pic6 {
+  grid-area: pic6;
+}
+.case-pic7 {
+  grid-area: pic7;
+}
+.case-pic8 {
+  grid-area: pic8;
+}
+.case-pic9 {
+  grid-area: pic9;
+}
+.case-pic10 {
+  grid-area: pic10;
+}
 
+/* End Cases */
 .balk {
   margin-top: 10px;
   display: flex;
@@ -67,14 +112,15 @@ p {
 .video-background {
   width: 100%;
 }
-
-.footer {
-  display: flex;
-}
 .cases {
   font-size: 170px;
   text-align: left;
   margin-top: -105px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
 }
 .geelvlak {
   padding: 1em;
@@ -105,3 +151,4 @@ p {
   display: flex;
   word-spacing: 30px;
 }
+/* End Footer */
