@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap");
 
+/* overall */
 * {
   padding: 0;
   margin: 0;
@@ -9,7 +10,15 @@ body {
   font-family: Josefin sans;
   scroll-behavior: "smooth";
 }
+/* end overall */
 
+/* figuren */
+.figuren {
+  margin-top: -400px;
+}
+/* end figuren */
+
+/* landdingspage */
 .home-page {
   display: flex;
   flex-direction: row;
@@ -26,8 +35,10 @@ body {
   background-color: #fbbb00;
   padding: 250px 0px 250px 0px;
 }
+/* end landdingspage */
 
-h2 {
+/* about */
+.headers {
   font-size: 24px;
   margin-top: 48px;
 }
@@ -43,13 +54,11 @@ p {
 .red {
   color: #ec7243;
 }
+/* end about */
 
+/* video */
 .width {
   width: 50%;
-}
-
-.figuren {
-  margin-top: -400px;
 }
 
 .balk {
@@ -64,18 +73,17 @@ p {
   text-align: left;
   margin-top: -105px;
 }
+
 .video-background {
   width: 100%;
 }
+/* end video */
 
+/* footer */
 .footer {
   display: flex;
 }
-.cases {
-  font-size: 170px;
-  text-align: left;
-  margin-top: -105px;
-}
+
 .geelvlak {
   padding: 1em;
   background-color: #fbbb00;
@@ -84,24 +92,30 @@ p {
   display: grid;
   color: white;
 }
+
 .geelvlak p {
   padding-top: 1em;
 }
+
 .footer-text {
   padding-top: 3em;
   padding-left: 5%;
   max-width: 30%;
   min-width: 160px;
 }
+
 .klein-logo {
   height: 254px;
   margin-left: -128px;
 }
+
 .footer-text-strook {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 .footer-contact-text {
   display: flex;
   word-spacing: 30px;
 }
+/* end footer */
