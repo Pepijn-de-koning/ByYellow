@@ -90,8 +90,18 @@ p {
 .footer-text {
   padding-top: 3em;
   padding-left: 5%;
+  max-width: 30%;
+  min-width: 160px;
 }
 .klein-logo {
   height: 254px;
   margin-left: -128px;
+}
+.footer-text-strook {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.footer-contact-text {
+  display: flex;
+  word-spacing: 30px;
 }
