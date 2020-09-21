@@ -11,6 +11,11 @@ body {
   scroll-behavior: "smooth";
 }
 
+::selection {
+    background-color: #FBBB00;
+    color: #EC7243;
+}
+
 .header-names {
   font-size: 170px;
   text-align: left;
