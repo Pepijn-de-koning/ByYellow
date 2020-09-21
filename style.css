@@ -10,6 +10,12 @@ body {
   font-family: Josefin sans;
   scroll-behavior: "smooth";
 }
+
+.header-names {
+  font-size: 170px;
+  text-align: left;
+  margin-top: 100px;
+}
 /* end overall */
 
 /* figuren */
@@ -135,6 +141,10 @@ p {
 
 .video-background {
   width: 100%;
+}
+
+.margin-bottom {
+  margin-bottom: 200px;
 }
 /* end video */
 
