@@ -139,6 +139,23 @@ p {
 /* end video */
 
 /* Team */
+.team {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-bottom: 5em;
+}
+.leden {
+  text-align: center;
+  padding-top: 3em;
+  padding-top: 3em;
+  max-width: 100%;
+}
+.team_name {
+  font-size: 2em;
+}
+.team_rol {
+  font-size: 1.2em;
+}
 
 /* End team */
 
