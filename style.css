@@ -171,21 +171,66 @@ p {
   background-repeat: no-repeat;
   background-color: #FBBB00;
   width: 100%;
-  min-height: 575px;
+}
+
+.onderwerp {
+  background-image: url("images/driehoeken-contact-form.png");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .inputs {
-   float: right;
+  float: right;
+  margin: 108px 100px;
 }
 
 input {
-padding: 10px 250px 10px 10px;
+  margin-bottom: 50px;
 }
 
+label {
+  color: white;
+  font-size: 18px;
+}
+
+.persoons-informatie {
+  padding: 25px 250px 25px 25px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+textarea {
+  padding: 25px 250px 200px 25px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.textareas {
+  margin: 125px 100px;
+}
 
 .onderwerp {
   background-color: #EC7243;
   width: 100%;
+}
+
+.submit {
+  text-align: center;
+  margin: 30px 0px 0px 200px;
+  padding: 10px 25px 10px 25px;
+  border-radius: 5px;
+  border: solid;
+  font-size: 18px;
+  background-color: inherit;
+  border-color: #FBBB00;
+  color: #FBBB00;
+}
+
+.submit:hover {
+  color: white;
+  background-color: #FBBB00;
 }
 
 
