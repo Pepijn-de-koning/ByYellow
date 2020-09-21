@@ -143,11 +143,10 @@ p {
   display: grid;
   grid-template-columns: auto auto;
   margin-bottom: 5em;
+  grid-gap: 3em;
 }
 .leden {
   text-align: center;
-  padding-top: 3em;
-  padding-top: 3em;
   max-width: 100%;
 }
 .team_name {
@@ -155,6 +154,8 @@ p {
 }
 .team_rol {
   font-size: 1.2em;
+}
+.img_team {
 }
 
 /* End team */
