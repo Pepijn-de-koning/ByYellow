@@ -14,8 +14,8 @@
   <body>
     <section>
       <div class="banner">
-        <div class="container mx-auto">
-          <img src="images/byellow-logo.png" alt="" />
+        <div class="mx-auto container">
+          <img class="img_logo" src="images/byellow-logo.png" alt="" />
         </div>
       </div>
 
@@ -103,24 +103,24 @@
       <div class="container">
         <div data-aos="fade-right" data-aos-duration="1000" class="balk">
           <a class="cases">cases<span class="yellow">.</span></a>
-          <img src="images/balk.png" alt="" />
+          <img class="balk_img" src="images/balk.png" alt="" />
         </div>
       </div>
       <div class="container cases-imgs">
         <div data-aos="fade-up" data-aos-duration="1000" class="case-pic1">
-          <img src="images/image1.png" alt="" />
+          <img class="img_cases" src="images/image1.png" alt="" />
         </div>
         <div data-aos="fade-up" data-aos-duration="1000" class="case-pic2">
-          <img src="images/Group 523.png" alt="" />
+          <img class="img_cases" src="images/Group 523.png" alt="" />
         </div>
         <div data-aos="fade-up" data-aos-duration="1000" class="case-pic3">
-          <img src="images/image2.png" alt="" />
+          <img class="img_cases" src="images/image2.png" alt="" />
         </div>
         <div data-aos="fade-up" data-aos-duration="1000" class="case-pic4">
-          <img src="images/image3.png" alt="" />
+          <img class="img_cases" src="images/image3.png" alt="" />
         </div>
         <div data-aos="fade-up" data-aos-duration="1000" class="case-pic5">
-          <img src="images/Group 523.png" alt="" />
+          <img class="img_cases" src="images/Group 523.png" alt="" />
         </div>
         <div
           data-aos="fade-up"
@@ -128,19 +128,19 @@
           data-aos="fade-up"
           class="case-pic6"
         >
-          <img src="images/Group 662.png" alt="" />
+          <img class="img_cases" src="images/Group 662.png" alt="" />
         </div>
         <div data-aos="fade-up" data-aos-duration="1000" class="case-pic7">
-          <img src="images/image4.png" alt="" />
+          <img class="img_cases" src="images/image4.png" alt="" />
         </div>
         <div data-aos="fade-up" data-aos-duration="1000" class="case-pic8">
-          <img src="images/Group 662.png" alt="" />
+          <img class="img_cases" src="images/Group 662.png" alt="" />
         </div>
         <div data-aos="fade-up" data-aos-duration="1000" class="case-pic9">
-          <img src="images/image4.png" alt="" />
+          <img class="img_cases" src="images/image4.png" alt="" />
         </div>
         <div data-aos="fade-up" data-aos-duration="1000" class="case-pic10">
-          <img src="images/Group 523.png" alt="" />
+          <img class="img_cases" src="images/Group 523.png" alt="" />
         </div>
       </div>
 
@@ -167,7 +167,7 @@
         <a class="cases">The team<span class="yellow">.</span></a>
         <div class="team">
           <div class="leden">
-            <img src="images/team-amber.png" alt="amber" />
+            <img class="img_team" src="images/team-amber.png" alt="amber" />
             <h3 class="team_name red">Amber Hulsbergen Henning</h3>
             <p class="team_rol">Graphic Designer</p>
             <p>
@@ -178,7 +178,7 @@
           </div>
 
           <div class="leden">
-            <img src="images/team-rowan.png" alt="rowan" />
+            <img class="img_team" src="images/team-rowan.png" alt="rowan" />
             <h3 class="team_name yellow">Rowan van Zijl</h3>
             <p class="team_rol">Graphic Designer</p>
             <p>
@@ -189,7 +189,7 @@
           </div>
 
           <div class="leden">
-            <img src="images/team-pepijn.png" alt="pepijn" />
+            <img class="img_team" src="images/team-pepijn.png" alt="pepijn" />
             <h3 class="team_name yellow">Pepijn de Koning</h3>
             <p class="team_rol">Media Developer</p>
             <p>
@@ -200,7 +200,7 @@
           </div>
 
           <div class="leden">
-            <img src="images/team-teun.png" alt="teun" />
+            <img class="img_team" src="images/team-teun.png" alt="teun" />
             <h3 class="team_name red">Teun van der Ploeg</h3>
             <p class="team_rol">Media Developer</p>
             <p>
@@ -214,55 +214,37 @@
     </section>
 
     <section>
-
       <div class="container">
         <a class="cases">lets talk<span class="yellow">.</span></a>
-      </div>
-
-      <form class="contact-form" action="index.html" method="post">
-
-        <div class="contact-informatie">
-          <div class="inputs">
-            <label for="fname">First Name</label> <br>
-            <input type="text" id="fname" name="firstname" placeholder="Your name.."> <br>
-
-            <label for="lname">Last Name</label> <br>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name.."> <br>
+        <form class="contact_form" action="#">
+          <div class="info_zender">
+            <p class="text_over_input">naam</p>
+            <input class="input_text" type="text" id="talk_naam" name="naam" />
+            <p class="text_over_input">email</p>
+            <input
+              class="input_text"
+              type="text"
+              id="talk_email"
+              name="email"
+            />
+            <p class="text_over_input">phone</p>
+            <input
+              class="input_text"
+              type="text"
+              id="talk_phone"
+              name="phone"
+            />
           </div>
-        </div>
 
-        <div class="onderwerp">
-          <label for="subject">Subject</label> <br>
-          <textarea id="subject" name="subject" placeholder="Whats on your mind.."></textarea> <br>
-
-          <input type="submit" value="Submit">
-        </div>
-      </form>
-
+          <div class="text_zender">
+            <p class="text_over_input">what is on your mind?</p>
+            <input class="talk_text" type="text" id="talk_text" name="text" />
+            <br />
+            <input class="submit_button" type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
     </section>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
     <section>
       <div data-aos="fade-right" data-aos-duration="1000" class="footer">

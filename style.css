@@ -169,25 +169,23 @@ p {
 .contact-informatie {
   background-image: url("images/balken-contact-form.png");
   background-repeat: no-repeat;
-  background-color: #FBBB00;
+  background-color: #fbbb00;
   width: 100%;
   min-height: 575px;
 }
 
 .inputs {
-   float: right;
+  float: right;
 }
 
 input {
-padding: 10px 250px 10px 10px;
+  padding: 10px 250px 10px 10px;
 }
-
 
 .onderwerp {
-  background-color: #EC7243;
+  background-color: #ec7243;
   width: 100%;
 }
-
 
 /* End contact */
 
@@ -231,3 +229,119 @@ padding: 10px 250px 10px 10px;
   word-spacing: 30px;
 }
 /* End Footer */
+
+/* Media query */
+@media only screen and (max-width: 1150px) {
+  .figuren {
+    display: none;
+  }
+  .banner {
+    justify-items: center;
+    align-items: center;
+  }
+  .home-page {
+    text-align: center;
+  }
+  .container {
+    max-width: 100%;
+    justify-items: center;
+  }
+  .width {
+    width: 100%;
+    padding-bottom: 5em;
+  }
+  .img_logo {
+    margin: auto 0;
+  }
+  .cases-imgs {
+    grid-template-areas:
+      "pic1 pic1 "
+      "pic3 pic3"
+      "pic4 pic4"
+      "pic7 pic7 "
+      "pic9 pic9 ";
+
+    grid-gap: 15px;
+    padding-bottom: 15em;
+  }
+  .case-pic2 {
+    grid-area: pic2;
+    display: none;
+  }
+  .case-pic5 {
+    grid-area: pic5;
+    display: none;
+  }
+  .case-pic6 {
+    grid-area: pic6;
+    display: none;
+  }
+  .case-pic8 {
+    grid-area: pic8;
+    display: none;
+  }
+  .case-pic10 {
+    grid-area: pic10;
+    display: none;
+  }
+  .video {
+    max-height: 500px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .team {
+    grid-template-columns: auto;
+  }
+  .leden {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .cases {
+    font-size: 80px;
+  }
+  .img_logo {
+    width: 100%;
+  }
+  .width {
+    padding-bottom: 8em;
+  }
+  .balk_img {
+    display: none;
+  }
+  .cases-imgs {
+    display: grid;
+    grid-template-areas:
+      "pic1"
+      "pic3"
+      "pic4"
+      "pic7"
+      "pic9";
+
+    grid-gap: 15px;
+    padding-bottom: 15em;
+    max-width: 400px;
+  }
+  .img_cases {
+    width: 300px;
+    overflow: hidden;
+  }
+  .video {
+    max-height: 200px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .team {
+    grid-template-columns: 1fr;
+    width: 100%;
+    overflow: hidden;
+  }
+  .leden {
+    text-align: center;
+    max-width: 100%;
+  }
+  .img_team {
+    width: 100%;
+  }
+}
