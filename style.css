@@ -140,10 +140,14 @@ p {
 
 /* Contact */
 .contact_form {
+  display: flex;
+  flex-direction: row;
 }
 .info_zender {
+  background-color: #FBBB00;
 }
 .text_zender {
+  background-color: #EC7243;
 }
 /* End contact */
 
