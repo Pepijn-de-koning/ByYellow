@@ -224,15 +224,15 @@ textarea {
   border: solid;
   font-size: 18px;
   background-color: inherit;
-  border-color: #FBBB00;
-  color: #FBBB00;
+  border-color: white;
+  color: white;
+  z-index: 2;
 }
 
 .submit:hover {
   color: white;
-  background-color: #FBBB00;
+  background-color: #fbbb00;
 }
-
 
 /* End contact */
 
@@ -278,6 +278,24 @@ textarea {
 /* End Footer */
 
 /* Media query */
+@media only screen and (max-width: 1350px) {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-informatie {
+    max-height: 30.5em;
+  }
+  .inputs {
+    float: left;
+    margin: 20px 20px;
+  }
+  .textareas {
+    margin: 20px 20px;
+  }
+  textarea {
+  }
+}
 @media only screen and (max-width: 1150px) {
   .figuren {
     display: none;
