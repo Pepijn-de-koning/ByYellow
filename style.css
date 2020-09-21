@@ -166,14 +166,28 @@ p {
 }
 
 .contact-informatie {
+  background-image: url("images/balken-contact-form.png");
+  background-repeat: no-repeat;
   background-color: #FBBB00;
   width: 100%;
- }
+  min-height: 575px;
+}
+
+.inputs {
+   float: right;
+}
+
+input {
+padding: 10px 250px 10px 10px;
+}
+
 
 .onderwerp {
   background-color: #EC7243;
   width: 100%;
- }
+}
+
+
 /* End contact */
 
 /* footer */
