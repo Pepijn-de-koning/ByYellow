@@ -139,15 +139,50 @@ p {
 /* end video */
 
 /* Contact */
+.contact_section {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
 .contact_form {
   display: flex;
   flex-direction: row;
+  color: white;
 }
 .info_zender {
-  background-color: #FBBB00;
+  background-color: #fbbb00;
+  width: 100%;
 }
 .text_zender {
-  background-color: #EC7243;
+  background-color: #ec7243;
+  width: 100%;
+}
+.text_over_input {
+  margin-top: 2em;
+  margin-left: 1em;
+  margin-bottom: 0.3em;
+}
+.input_text {
+  margin-bottom: 2em;
+  margin-left: 1em;
+  width: 90%;
+  height: 2em;
+}
+.talk_text {
+  height: 70%;
+  width: 90%;
+  margin-left: 1em;
+}
+.submit_button {
+  margin-top: 0.3em;
+  margin-left: 1em;
+  padding: 0.5em;
+  background-color: #fbbb00;
+  border: solid #fbbb00;
+  transition: 0.1s ease background-color;
+}
+.submit_button:hover {
+  background-color: #ec7243;
+  border: solid #fbbb00;
 }
 /* End contact */
 
