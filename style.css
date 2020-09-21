@@ -10,6 +10,17 @@ body {
   font-family: Josefin sans;
   scroll-behavior: "smooth";
 }
+
+::selection {
+  background-color: #fbbb00;
+  color: #ec7243;
+}
+
+.header-names {
+  font-size: 170px;
+  text-align: left;
+  margin-top: 100px;
+}
 /* end overall */
 
 /* figuren */
@@ -136,6 +147,10 @@ p {
 .video-background {
   width: 100%;
 }
+
+.margin-bottom {
+  margin-bottom: 200px;
+}
 /* end video */
 
 /* Team */
@@ -259,6 +274,8 @@ textarea {
   padding-left: 5%;
   max-width: 30%;
   min-width: 160px;
+  z-index: 2;
+  text-shadow: 1px 1px #000000;
 }
 
 .klein-logo {
@@ -292,8 +309,6 @@ textarea {
   }
   .textareas {
     margin: 20px 20px;
-  }
-  textarea {
   }
 }
 @media only screen and (max-width: 1150px) {
@@ -408,5 +423,27 @@ textarea {
   }
   .img_team {
     width: 100%;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-informatie {
+    max-height: 30.5em;
+  }
+  .inputs {
+    float: left;
+    margin: 20px 20px;
+  }
+  .textareas {
+    margin: 20px 20px;
+  }
+  .persoons-informatie {
+    padding: 15px 50px 15px 25px;
+  }
+
+  textarea {
+    padding: 15px 50px 50px 25px;
   }
 }
