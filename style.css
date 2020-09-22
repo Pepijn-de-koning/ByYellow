@@ -401,6 +401,8 @@ textarea {
       "pic9 pic9 ";
 
     grid-gap: 15px;
+    margin: 0;
+    padding: 0;
     padding-bottom: 15em;
   }
   .case-pic2 {
