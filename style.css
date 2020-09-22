@@ -57,12 +57,15 @@ body {
 
 /* about */
 .headers {
-  font-size: 24px;
+  font-size: 28px;
   margin-top: 48px;
+  margin-bottom: 15px;
 }
 
 p {
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.625;
 }
 
 .yellow {
@@ -155,6 +158,7 @@ p {
 
 /* Team */
 .team {
+  margin-top: 48px;
   display: grid;
   grid-template-columns: auto auto;
   margin-bottom: 5em;
@@ -166,9 +170,17 @@ p {
 }
 .team_name {
   font-size: 2em;
+  margin-top: 38px;
+  margin-bottom: 10px;
 }
 .team_rol {
   font-size: 1.2em;
+  color: #808080;
+  margin-bottom: 38px;
+}
+
+.team_rol + p {
+  margin-bottom: 60px;
 }
 .img_team {
 }
@@ -270,12 +282,13 @@ textarea {
 }
 
 .footer-text {
-  padding-top: 3em;
+  padding-top: 1em;
   padding-left: 5%;
   max-width: 30%;
   min-width: 160px;
   z-index: 2;
-  text-shadow: 1px 1px #000000;
+  font-size: 26px;
+  font-weight: 700;
 }
 
 .klein-logo {

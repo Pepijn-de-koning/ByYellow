@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <meta name="author" content="Teun van der Ploeg, Pepijn de koning" />
+    <meta name="author" content="Teun van der Ploeg, Pepijn de Koning" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="menu.css" />
     <link href="node_modules/aos/dist/aos.css" rel="stylesheet" />
@@ -21,7 +21,7 @@
 
       <div class="menu-wrap">
         <input type="checkbox" class="toggler" />
-        <div class="hamburger">
+        <div data-scroll="0" class="hamburger" id="hamburger">
           <div></div>
         </div>
         <div class="menu">
@@ -60,23 +60,7 @@
             </p>
           </div>
 
-          <div data-aos="fade-right" data-aos-duration="1000">
-            <h2 class="headers red">
-              Our concept<span class="yellow">.</span>
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet.
-            </p>
-          </div>
+
 
           <div data-aos="fade-left" data-aos-duration="1000">
             <h2 class="headers red">
@@ -152,7 +136,7 @@
           <a class="cases">who<span class="yellow">.</span></a>
         </div>
 
-        <div class="video-section">
+        <div class="video-section" id="video">
           <div class="container">
             <iframe
               class="video"
@@ -167,7 +151,7 @@
 
     <section>
       <div class="container margin-bottom">
-        <a class="header-names cases">The team<span class="yellow">.</span></a>
+        <a class="header-names the-team">the team<span class="yellow">.</span></a>
         <div class="team">
           <div class="leden">
             <img class="img_team" src="images/team-amber.png" alt="amber" />

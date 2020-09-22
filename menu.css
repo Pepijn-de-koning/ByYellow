@@ -10,8 +10,9 @@ li {
 }
 
 .toggler{
-	position: absolute;
-	top: 0.5rem;
+	position: fixed;
+	top: 50%;
+	bottom: 50%;
 	left: 0.5rem;
 	width: 60px;
 	height: 60px;
@@ -21,8 +22,9 @@ li {
 }
 
 .hamburger{
-	position: absolute;
-	top: 0.5rem;
+	position: fixed;
+	top: 50%;
+	bottom: 50%;
 	left: 0.5rem;
 	width: 60px;
 	height: 60px;
@@ -138,4 +140,20 @@ li {
 
 .toggler:checked ~ .menu > div > div{
 	opacity: 1;
+}
+
+.yellowmenu {
+ background-color: #FBBB00;
+}
+
+.yellowmenu>div{
+	background-color: #EC7243;
+}
+
+.yellowmenu>div:before{
+	background-color: #EC7243;
+}
+
+.yellowmenu>div:after{
+	background-color: #EC7243;
 }
