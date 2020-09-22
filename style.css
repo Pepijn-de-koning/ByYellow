@@ -4,6 +4,18 @@
 * {
   padding: 0;
   margin: 0;
+  /* border: 1px solid #f00 !important; */
+}
+
+ * , *:before, *:after{ 
+     box-sizing:border-box; 
+     -moz-box-sizing:border-box; 
+     -webkit-box-sizing:border-box; 
+     -ms-box-sizing:border-box;
+   }
+
+textarea, input:not(.submit) {
+  width: 100%;
 }
 
 body {
@@ -37,6 +49,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  width: 1fr;
 }
 /* end figuren */
 
@@ -51,6 +64,14 @@ body {
   width: 100%;
   max-width: 1140px;
   margin: auto;
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
 }
 
 .banner {
@@ -99,8 +120,8 @@ p {
     "pic5 pic5 pic4 pic4 pic6 pic6"
     "pic7 pic7 pic8 pic8 pic9 pic9"
     "pic7 pic7 pic10 pic10 pic9 pic9";
-  grid-gap: 5%;
-  padding: 10px;
+  grid-gap: 57px;
+  /* padding: 10px; */
   justify-items: center;
   padding-bottom: 15em;
 }
@@ -135,6 +156,10 @@ p {
   grid-area: pic10;
 }
 
+
+.img_cases {
+  width: 100%;
+}
 /* End Cases */
 
 /* video */
@@ -168,7 +193,6 @@ p {
   display: grid;
   grid-template-columns: auto auto;
   margin-bottom: 5em;
-  grid-gap: 3em;
 }
 .leden {
   text-align: center;
@@ -188,8 +212,9 @@ p {
 .team_rol + p {
   margin-bottom: 60px;
 }
-.img_team {
-}
+/* .img_team {
+  width: 100%;
+} */
 
 /* End team */
 
@@ -204,6 +229,17 @@ p {
   background-repeat: no-repeat;
   background-color: #fbbb00;
   width: 100%;
+}
+
+@media only screen and (max-width: 1330px) {
+  .contact-informatie {
+    background-color: #fbbb00;
+    background-image: none;
+  }
+  .onderwerp {
+    background-color: #fbbb00 !important;
+    background-image: none !important;
+  }
 }
 
 .onderwerp {
@@ -340,7 +376,7 @@ textarea {
     align-items: center;
   }
   .home-page {
-    text-align: center;
+    text-align: left;
   }
   .container {
     max-width: 100%;
@@ -354,6 +390,8 @@ textarea {
     margin: auto 0;
     position: relative;
     z-index: 2;
+    max-width: 100%;
+    width: 645px;
   }
   .cases-imgs {
     grid-template-areas:
@@ -401,6 +439,12 @@ textarea {
     max-width: 100%;
   }
 }
+
+@media only screen and (max-width: 768px) {
+    .balk_img {
+    display: none;
+  }
+}
 @media only screen and (max-width: 400px) {
   .cases {
     font-size: 80px;
@@ -410,9 +454,6 @@ textarea {
   }
   .width {
     padding-bottom: 8em;
-  }
-  .balk_img {
-    display: none;
   }
   .cases-imgs {
     display: grid;
@@ -429,7 +470,6 @@ textarea {
   }
   .img_cases {
     width: 300px;
-    overflow: hidden;
   }
   .cases-imgs {
     padding: 0;
@@ -513,6 +553,9 @@ textarea {
     display: flex;
     word-spacing: 10px;
   }
+}
+
+@media only screen and (max-width: 630px) {
   .circle {
     display: none;
   }
@@ -571,4 +614,10 @@ textarea {
   to {
     transform: scale(1.4);
   }
+}
+
+.balk_img {
+  height: 20px;
+  background-color: #ec7243;
+  width: 100%;
 }
