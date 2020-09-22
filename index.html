@@ -6,16 +6,18 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="Teun van der Ploeg, Pepijn de Koning" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="menu.css" />
     <link href="node_modules/aos/dist/aos.css" rel="stylesheet" />
     <title>Byellow</title>
   </head>
-  <body>
+  <body class="loading">
     <section>
       <div class="banner">
         <div class="mx-auto container">
           <img class="img_logo" src="images/byellow-logo.png" alt="" />
+          <div class="circle e"></div>
         </div>
       </div>
 
@@ -42,7 +44,7 @@
 
       <div class="container mx-auto home-page">
         <div class="width">
-          <div data-aos="fade-left" data-aos-duration="1000">
+          <div data-aos="fade-in" data-aos-duration="500">
             <h2 class="headers red">
               We are byellow<span class="yellow">.</span>
             </h2>
@@ -62,7 +64,7 @@
 
 
 
-          <div data-aos="fade-left" data-aos-duration="1000">
+          <div data-aos="fade-in" data-aos-duration="500">
             <h2 class="headers red">
               Humor, efficiency, continually<span class="yellow">.</span>
             </h2>
@@ -87,46 +89,46 @@
       </div>
 
       <div class="container">
-        <div data-aos="fade-right" data-aos-duration="1000" class="balk">
+        <div data-aos="fade-in" data-aos-duration="500" class="balk">
           <a class="cases">cases<span class="yellow">.</span></a>
           <img class="balk_img" src="images/balk.png" alt="" />
         </div>
       </div>
 
       <div class="container cases-imgs margin-bottom">
-        <div data-aos="fade-up" data-aos-duration="1000" class="case-pic1">
+        <div data-aos="fade-up" data-aos-duration="500" class="case-pic1">
           <img class="img_cases" src="images/image1.png" alt="" />
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" class="case-pic2">
+        <div data-aos="fade-up" data-aos-duration="500" class="case-pic2">
           <img class="img_cases" src="images/Group 523.png" alt="" />
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" class="case-pic3">
+        <div data-aos="fade-up" data-aos-duration="500" class="case-pic3">
           <img class="img_cases" src="images/image2.png" alt="" />
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" class="case-pic4">
+        <div data-aos="fade-up" data-aos-duration="500" class="case-pic4">
           <img class="img_cases" src="images/image3.png" alt="" />
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" class="case-pic5">
+        <div data-aos="fade-up" data-aos-duration="500" class="case-pic5">
           <img class="img_cases" src="images/Group 523.png" alt="" />
         </div>
         <div
           data-aos="fade-up"
-          data-aos-duration="1000"
+          data-aos-duration="500"
           data-aos="fade-up"
           class="case-pic6"
         >
           <img class="img_cases" src="images/Group 662.png" alt="" />
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" class="case-pic7">
+        <div data-aos="fade-up" data-aos-duration="500" class="case-pic7">
           <img class="img_cases" src="images/image4.png" alt="" />
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" class="case-pic8">
+        <div data-aos="fade-up" data-aos-duration="500" class="case-pic8">
           <img class="img_cases" src="images/Group 662.png" alt="" />
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" class="case-pic9">
+        <div data-aos="fade-up" data-aos-duration="500" class="case-pic9">
           <img class="img_cases" src="images/image4.png" alt="" />
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" class="case-pic10">
+        <div data-aos="fade-up" data-aos-duration="500" class="case-pic10">
           <img class="img_cases" src="images/Group 523.png" alt="" />
         </div>
       </div>
@@ -232,7 +234,7 @@
     </section>
 
     <section>
-      <div data-aos="fade-right" data-aos-duration="1000" class="footer">
+      <div data-aos="fade-up" data-aos-duration="500" class="footer">
         <div class="geelvlak">
           <div class="footer-text">
             <div class="footer-text-strook">
@@ -256,7 +258,9 @@
         />
       </div>
     </section>
-
+    <div class="loader">
+      <div class="icon"></div>
+    </div>
     <script
       src="https://kit.fontawesome.com/af1b884290.js"
       crossorigin="anonymous"

@@ -8,7 +8,6 @@
 
 body {
   font-family: Josefin sans;
-  scroll-behavior: "smooth";
 }
 
 ::selection {
@@ -26,6 +25,11 @@ body {
 /* figuren */
 .figuren {
   margin-top: -400px;
+}
+
+.figuren img {
+  position: relative;
+  z-index: 1;
 }
 
 .balk {
@@ -50,6 +54,8 @@ body {
 }
 
 .banner {
+  position: relative;
+  z-index: 0;
   background-color: #fbbb00;
   padding: 250px 0px 250px 0px;
 }
@@ -345,6 +351,8 @@ textarea {
   }
   .img_logo {
     margin: auto 0;
+    position: relative;
+    z-index: 2;
   }
   .cases-imgs {
     grid-template-areas:
@@ -460,3 +468,59 @@ textarea {
     padding: 15px 50px 50px 25px;
   }
 }
+
+.circle {
+  background-color: #ec7243;
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  position: absolute;
+  top: 170px;
+  z-index: -1;
+}
+
+
+/* loader */
+.loading .loader {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+.loading .icon {
+  content: '';
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px; /* Negative half of height. */
+  margin-left: -25px; /* Negative half of width. */
+  background: #ec7243;
+  border-radius: 100%;
+  z-index: 99;
+  animation: beat .70s infinite alternate;
+	transform-origin: center;
+}
+
+.loading .menu-wrap {
+  z-index: 0;
+}
+
+.loading .figuren img {
+  z-index: 0;
+}
+
+.loading {
+  overflow: hidden;
+}
+
+@keyframes beat{
+	to { transform: scale(1.4); }
+}
+
