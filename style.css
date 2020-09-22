@@ -265,6 +265,7 @@ textarea {
 .submit:hover {
   color: white;
   background-color: #fbbb00;
+  border-color: #fbbb00;
 }
 
 /* End contact */
