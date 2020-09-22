@@ -8,12 +8,11 @@
 
 body {
   font-family: Josefin sans;
-  scroll-behavior: "smooth";
 }
 
 ::selection {
-    background-color: #FBBB00;
-    color: #EC7243;
+  background-color: #fbbb00;
+  color: #ec7243;
 }
 
 .header-names {
@@ -26,6 +25,11 @@ body {
 /* figuren */
 .figuren {
   margin-top: -400px;
+}
+
+.figuren img {
+  position: relative;
+  z-index: 1;
 }
 
 .balk {
@@ -50,6 +54,8 @@ body {
 }
 
 .banner {
+  position: relative;
+  z-index: 0;
   background-color: #fbbb00;
   padding: 250px 0px 250px 0px;
 }
@@ -57,12 +63,15 @@ body {
 
 /* about */
 .headers {
-  font-size: 24px;
+  font-size: 28px;
   margin-top: 48px;
+  margin-bottom: 15px;
 }
 
 p {
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.625;
 }
 
 .yellow {
@@ -155,6 +164,7 @@ p {
 
 /* Team */
 .team {
+  margin-top: 48px;
   display: grid;
   grid-template-columns: auto auto;
   margin-bottom: 5em;
@@ -166,9 +176,17 @@ p {
 }
 .team_name {
   font-size: 2em;
+  margin-top: 38px;
+  margin-bottom: 10px;
 }
 .team_rol {
   font-size: 1.2em;
+  color: #808080;
+  margin-bottom: 38px;
+}
+
+.team_rol + p {
+  margin-bottom: 60px;
 }
 .img_team {
 }
@@ -239,15 +257,15 @@ textarea {
   border: solid;
   font-size: 18px;
   background-color: inherit;
-  border-color: #FBBB00;
-  color: #FBBB00;
+  border-color: white;
+  color: white;
+  z-index: 2;
 }
 
 .submit:hover {
   color: white;
-  background-color: #FBBB00;
+  background-color: #fbbb00;
 }
-
 
 /* End contact */
 
@@ -270,10 +288,13 @@ textarea {
 }
 
 .footer-text {
-  padding-top: 3em;
+  padding-top: 1em;
   padding-left: 5%;
   max-width: 30%;
   min-width: 160px;
+  z-index: 2;
+  font-size: 26px;
+  font-weight: 700;
 }
 
 .klein-logo {
@@ -293,6 +314,22 @@ textarea {
 /* End Footer */
 
 /* Media query */
+@media only screen and (max-width: 1350px) {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-informatie {
+    max-height: 30.5em;
+  }
+  .inputs {
+    float: left;
+    margin: 20px 20px;
+  }
+  .textareas {
+    margin: 20px 20px;
+  }
+}
 @media only screen and (max-width: 1150px) {
   .figuren {
     display: none;
@@ -314,6 +351,8 @@ textarea {
   }
   .img_logo {
     margin: auto 0;
+    position: relative;
+    z-index: 2;
   }
   .cases-imgs {
     grid-template-areas:
@@ -324,6 +363,8 @@ textarea {
       "pic9 pic9 ";
 
     grid-gap: 15px;
+    margin: 0;
+    padding: 0;
     padding-bottom: 15em;
   }
   .case-pic2 {
@@ -389,6 +430,11 @@ textarea {
     width: 300px;
     overflow: hidden;
   }
+  .cases-imgs {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 6em;
+  }
   .video {
     max-height: 200px;
     max-width: 80%;
@@ -405,5 +451,123 @@ textarea {
   }
   .img_team {
     width: 100%;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-informatie {
+    max-height: 30.5em;
+  }
+  .inputs {
+    float: left;
+    margin: 20px 20px;
+  }
+  .textareas {
+    margin: 20px 20px;
+  }
+  .persoons-informatie {
+    padding: 15px 50px 15px 25px;
+  }
+
+  textarea {
+    padding: 15px 50px 50px 25px;
+  }
+  .the-team {
+    font-size: 5em;
+  }
+
+  .geelvlak {
+    padding: 1em;
+    background-color: #fbbb00;
+    width: 70%;
+    max-height: 200px;
+  }
+
+  .geelvlak p {
+    padding-top: 1em;
+    font-size: 0.6em;
+  }
+
+  .footer-text {
+    padding-top: 1em;
+    padding-left: 1%;
+    max-width: 30%;
+    z-index: 2;
+    font-weight: 700;
+  }
+
+  .klein-logo {
+    height: 200px;
+    margin-left: -100px;
+  }
+
+  .footer-text-strook {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .footer-contact-text {
+    display: flex;
+    word-spacing: 10px;
+  }
+  .circle {
+    display: none;
+  }
+}
+
+.circle {
+  background-color: #ec7243;
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  position: absolute;
+  top: 170px;
+  z-index: -1;
+}
+
+/* loader */
+.loading .loader {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.loading .icon {
+  content: "";
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px; /* Negative half of height. */
+  margin-left: -25px; /* Negative half of width. */
+  background: #ec7243;
+  border-radius: 100%;
+  z-index: 99;
+  animation: beat 0.7s infinite alternate;
+  transform-origin: center;
+}
+
+.loading .menu-wrap {
+  z-index: 0;
+}
+
+.loading .figuren img {
+  z-index: 0;
+}
+
+.loading {
+  overflow: hidden;
+}
+
+@keyframes beat {
+  to {
+    transform: scale(1.4);
   }
 }
