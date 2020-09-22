@@ -428,6 +428,11 @@ textarea {
     width: 300px;
     overflow: hidden;
   }
+  .cases-imgs {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 6em;
+  }
   .video {
     max-height: 200px;
     max-width: 80%;
@@ -467,6 +472,47 @@ textarea {
   textarea {
     padding: 15px 50px 50px 25px;
   }
+  .the-team {
+    font-size: 5em;
+  }
+
+  .geelvlak {
+    padding: 1em;
+    background-color: #fbbb00;
+    width: 70%;
+    max-height: 200px;
+  }
+
+  .geelvlak p {
+    padding-top: 1em;
+    font-size: 0.6em;
+  }
+
+  .footer-text {
+    padding-top: 1em;
+    padding-left: 1%;
+    max-width: 30%;
+    z-index: 2;
+    font-weight: 700;
+  }
+
+  .klein-logo {
+    height: 200px;
+    margin-left: -100px;
+  }
+
+  .footer-text-strook {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .footer-contact-text {
+    display: flex;
+    word-spacing: 10px;
+  }
+  .circle {
+    display: none;
+  }
 }
 
 .circle {
@@ -479,7 +525,6 @@ textarea {
   z-index: -1;
 }
 
-
 /* loader */
 .loading .loader {
   width: 100vw;
@@ -490,10 +535,9 @@ textarea {
   bottom: 0;
   left: 0;
   right: 0;
-
 }
 .loading .icon {
-  content: '';
+  content: "";
   position: fixed;
   width: 50px;
   height: 50px;
@@ -504,8 +548,8 @@ textarea {
   background: #ec7243;
   border-radius: 100%;
   z-index: 99;
-  animation: beat .70s infinite alternate;
-	transform-origin: center;
+  animation: beat 0.7s infinite alternate;
+  transform-origin: center;
 }
 
 .loading .menu-wrap {
@@ -520,7 +564,8 @@ textarea {
   overflow: hidden;
 }
 
-@keyframes beat{
-	to { transform: scale(1.4); }
+@keyframes beat {
+  to {
+    transform: scale(1.4);
+  }
 }
-
