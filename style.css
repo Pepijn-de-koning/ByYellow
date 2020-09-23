@@ -7,10 +7,10 @@
   /* border: 1px solid #f00 !important; */
 }
 
- * , *:before, *:after{ 
-     box-sizing:border-box; 
-     -moz-box-sizing:border-box; 
-     -webkit-box-sizing:border-box; 
+ * , *:before, *:after{
+     box-sizing:border-box;
+     -moz-box-sizing:border-box;
+     -webkit-box-sizing:border-box;
      -ms-box-sizing:border-box;
    }
 
@@ -64,7 +64,7 @@ body {
   width: 100%;
   max-width: 1140px;
   margin: auto;
-  
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -270,7 +270,7 @@ label {
 }
 
 textarea {
-  padding: 25px 250px 200px 25px;
+  padding: 25px 25px 250px 25px;
   border-radius: 5px;
   border: none;
   font-size: 18px;
