@@ -105,18 +105,18 @@ li {
   transition: 0.6s;
 }
 
-.menu > div > div {
+.nav-items {
   max-width: 90vw;
   max-height: 100vh;
   opacity: 0;
   transition: 0.6s;
 }
 
-.menu > div > div > ul > li {
+.menu ul li {
   list-style: none;
 }
 
-.menu > div > div > ul > li > a {
+#menu-close {
   text-decoration: none;
   color: #fff;
   font-weight: 550;
@@ -127,7 +127,7 @@ li {
   display: inline-block;
 }
 
-.menu > div > div > ul > li > a:hover {
+#menu-close:hover {
   color: #fff44f;
 }
 
