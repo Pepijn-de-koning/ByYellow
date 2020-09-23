@@ -2,7 +2,7 @@ window.onload = function() {
     document.body.classList.remove("loading");
     window.scrollTo(window.scrollX, window.scrollY - 1);
     window.scrollTo(window.scrollX, window.scrollY + 1);
-}; 
+};
 
 
 
@@ -20,7 +20,7 @@ function isInsideInImages(images, logoPos) {
     ) {
       return true;
     }
-  
+
   return false;
 }
 
@@ -61,3 +61,7 @@ window.addEventListener("scroll", function () {
 });
 
 
+document.getElementById('menu-close').addEventListener('click', function(){
+
+    document.getElementById('toggler').checked = false;
+});

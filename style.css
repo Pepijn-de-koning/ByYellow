@@ -1,4 +1,4 @@
-  @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap");
 
 /* overall */
 * {
@@ -7,6 +7,17 @@
   /* border: 1px solid #f00 !important; */
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+textarea,
+input:not(.submit) {
   width: 100%;
 }
 
@@ -266,7 +277,7 @@ label {
 }
 
 textarea {
-  padding: 25px 25px 250px 25px;
+  padding: 25px 250px 200px 25px;
   border-radius: 5px;
   border: none;
   font-size: 18px;
