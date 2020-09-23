@@ -7,14 +7,17 @@
   /* border: 1px solid #f00 !important; */
 }
 
- * , *:before, *:after{ 
-     box-sizing:border-box; 
-     -moz-box-sizing:border-box; 
-     -webkit-box-sizing:border-box; 
-     -ms-box-sizing:border-box;
-   }
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
 
-textarea, input:not(.submit) {
+textarea,
+input:not(.submit) {
   width: 100%;
 }
 
@@ -64,7 +67,6 @@ body {
   width: 100%;
   max-width: 1140px;
   margin: auto;
-  
 }
 
 @media only screen and (max-width: 768px) {
@@ -155,7 +157,6 @@ p {
 .case-pic10 {
   grid-area: pic10;
 }
-
 
 .img_cases {
   width: 100%;
@@ -440,11 +441,11 @@ textarea {
 }
 
 @media only screen and (max-width: 768px) {
-    .balk_img {
+  .balk_img {
     display: none;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .cases {
     font-size: 80px;
   }
