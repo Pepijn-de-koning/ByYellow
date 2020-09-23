@@ -14,7 +14,8 @@
   </head>
   <body class="loading">
     <section>
-      <div class="banner">
+      <a id="home"></a>
+      <div data-aos="fade-in" class="banner">
         <div class="mx-auto container">
           <img class="img_logo" src="images/byellow-logo.png" alt="" />
           <div class="circle e"></div>
@@ -30,12 +31,12 @@
           <div>
             <div class="nav-items">
               <ul>
-                <li><a id="menu-close" href="index.html">Home       <span class="red">.</span></a></li>
-                <li><a id="menu-close" href="#about"    >About us   <span class="red">.</span></a></li>
-                <li><a id="menu-close" href="#cases"    >Cases      <span class="red">.</span></a></li>
-                <li><a id="menu-close" href="#who"      >Who        <span class="red">.</span></a></li>
-                <li><a id="menu-close" href="#team"     >The Team   <span class="red">.</span></a></li>
-                <li><a id="menu-close" href="#form"     >Contact Us <span class="red">.</span></a></li>
+                <li id="openClose"><a id="menu-close" href="#home">Home       <span class="red">.</span></a></li>
+                <li id="openClose"><a id="menu-close" href="#about"    >About us   <span class="red">.</span></a></li>
+                <li id="openClose"><a id="menu-close" href="#cases"    >Cases      <span class="red">.</span></a></li>
+                <li id="openClose"><a id="menu-close" href="#who"      >Who        <span class="red">.</span></a></li>
+                <li id="openClose"><a id="menu-close" href="#team"     >The Team   <span class="red">.</span></a></li>
+                <li id="openClose"><a id="menu-close" href="#form"     >Contact Us <span class="red">.</span></a></li>
               </ul>
             </div>
           </div>
@@ -45,9 +46,9 @@
         <a id="about"></a>
         <div class="container mx-auto home-page">
           <div class="width">
-            <div data-aos="fade-in" data-aos-duration="500">
+            <div data-aos-anchor-placement="center-center" data-aos="fade-in" data-aos-duration="500">
               <h2 class="headers red">
-                We are byellow<span class="yellow">.</span>
+                wij zijn byellow<span class="yellow">.</span>
               </h2>
               <p>
               Hoi, wij zijn byellow. Wij maken de branding van jouw bedrijf compleet. Maar wat bedoelen we hier nu mee? Dat vertellen we je (heel) graag. Want wij zijn geen doorsnee media bedrijf, dat kun je wellicht aan onze website zien. Wij bedenken, designen, en maken alles van jouw branding, maar wat is een branding? Een branding is alles wat te maken heeft met hoe jouw bedrijf er voor het publiek uit ziet. Denk aan social media, logo's, websites, briefpapier, merchandise etc. Wij maken dit allemaal voor je, tegen de juiste prijs. Cool hé?
@@ -56,12 +57,12 @@
 
 
 
-            <div data-aos="fade-in" data-aos-duration="500">
-              <h2 class="headers red">
-                Quality, Efficiency, Creativity<span class="yellow">.</span>
+            <div data-aos-anchor-placement="center-center" data-aos="fade-in" data-aos-duration="500">
+              <h2 class="headers red mt-5">
+                humor, efficiëntie, en continuïteit<span class="yellow">.</span>
               </h2>
               <p>
-
+                Dat zijn onze standpunten. We hebben humor, althans, dat denken we. We zijn efficient, dat is een fancy woord voor "snel en goed gepland". En we willen graag voor een langere tijd met u samenwerken, daarom continuïteit. Meer weten? Scroll verder!
               </p>
             </div>
           </div>
@@ -125,11 +126,10 @@
 
         <div class="video-section" id="video">
           <div class="container">
-            <iframe class="video" width="978" height="550" src="https://www.youtube.com/embed/G2ktinN_g14?controls=0" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
+            <div data-aos="fade-in" data-aos-duration="700" style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe
+                src="https://streamable.com/e/514s92" frameborder="0" width="100%" height="100%" allowfullscreen
+                style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
           </div>
-        </div>
       </div>
     </section>
 
@@ -138,7 +138,7 @@
       <div class="container margin-bottom">
         <a class="header-names the-team">the team<span class="yellow">.</span></a>
         <div class="team">
-          <div class="leden">
+          <div class="leden" data-aos="fade-in" data-aos-anchor-placement="top-center">
             <img class="img_team" src="images/team-amber.png" alt="amber" />
             <h3 class="team_name red">Amber Hulsbergen Henning</h3>
             <p class="team_rol">Graphic Designer</p>
@@ -147,7 +147,7 @@
             </p>
           </div>
 
-          <div class="leden">
+          <div class="leden" data-aos="fade-in" data-aos-anchor-placement="top-center" data-aos-delay="300">
             <img class="img_team" src="images/team-rowan.png" alt="rowan" />
             <h3 class="team_name yellow">Rowan van Zijl</h3>
             <p class="team_rol">Graphic Designer</p>
@@ -156,7 +156,7 @@
             </p>
           </div>
 
-          <div class="leden">
+          <div class="leden" data-aos="fade-in" data-aos-anchor-placement="top-center" data-aos-delay="600">
             <img class="img_team" src="images/team-pepijn.png" alt="pepijn" />
             <h3 class="team_name yellow">Pepijn de Koning</h3>
             <p class="team_rol">Media Developer</p>
@@ -165,7 +165,7 @@
             </p>
           </div>
 
-          <div class="leden">
+          <div class="leden" data-aos="fade-in" data-aos-anchor-placement="top-center" data-aos-delay="900">
             <img class="img_team" src="images/team-teun.png" alt="teun" />
             <h3 class="team_name red">Teun van der Ploeg</h3>
             <p class="team_rol">Media Developer</p>
@@ -186,18 +186,18 @@
         <form action="contactform.php" method="post" class="contact-form margin-bottom">
           <div class="contact-informatie">
             <div class="inputs">
-              <label for="fname">First Name</label> <br>
-              <input class="persoons-informatie" name="firstname" placeholder="Uw voornaam.."> <br>
-              <label for="lname">Last Name</label> <br>
-              <input class="persoons-informatie" name="lastname" placeholder="Uw achernaam"> <br>
-              <label for="lname">email</label> <br>
-              <input class="persoons-informatie" name="email" placeholder="Uw email adres"> <br>
+              <label for="fname">naam</label> <br>
+              <input class="persoons-informatie" name="firstname" placeholder="'Jan'"> <br>
+              <label for="lname">achternaam</label> <br>
+              <input class="persoons-informatie" name="lastname" placeholder="'Jurk'"> <br>
+              <label for="lname">e-mail</label> <br>
+              <input class="persoons-informatie" name="email" placeholder="'janjurk@gmail.com'"> <br>
             </div>
           </div>
           <div class="onderwerp">
             <div class="textareas">
-              <label for="subject">Uw bericht</label> <br>
-              <textarea id="subject" name="subject" style="resize: none;" placeholder="Whats on your mind.."></textarea> <br>
+              <label for="subject">uw bericht</label> <br>
+              <textarea id="subject" name="subject" style="resize: none;" placeholder="lucht je hart..."></textarea> <br>
               <input class="submit" name="submit" type="submit" value="submit">
             </div>
           </div>

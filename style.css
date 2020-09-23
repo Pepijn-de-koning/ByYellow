@@ -86,14 +86,16 @@ body {
   position: relative;
   z-index: 0;
   background-color: #fbbb00;
-  padding: 250px 0px 250px 0px;
+  padding-top: 350px;
+  padding-bottom: 350px;
+  transition: all 1.5s ease;
 }
 /* end landdingspage */
 
 /* about */
 .headers {
   font-size: 28px;
-  margin-top: 48px;
+  margin-top: 107px;
   margin-bottom: 15px;
 }
 
@@ -179,6 +181,7 @@ p {
 .video {
   display: flex;
   justify-content: center;
+  margin: auto;
 }
 
 .width {
@@ -263,6 +266,7 @@ p {
 input {
   margin-bottom: 50px;
   width: 100%;
+  font-family: Josefin sans;
 }
 
 label {
@@ -275,6 +279,7 @@ label {
   border-radius: 5px;
   border: none;
   font-size: 18px;
+  margin-top: 15px;
 }
 
 textarea {
@@ -282,6 +287,12 @@ textarea {
   border: none;
   font-size: 18px;
   padding: 10px 0px 250px 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  margin-top: 15px;
+  height: 380px;
+  font-family: Josefin sans;
 }
 
 .textareas {
@@ -579,7 +590,7 @@ textarea {
 }
 
 /* loader */
-.loading .loader {
+.loader {
   width: 100vw;
   height: 100vh;
   background-color: white;
@@ -588,6 +599,15 @@ textarea {
   bottom: 0;
   left: 0;
   right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1.5s ease;
+}
+
+.loading .loader {
+  opacity: 1;
+  visibility: visible;
+  transition: all 1.5s ease;
 }
 
 .loading .icon {
@@ -628,4 +648,17 @@ textarea {
   height: 20px;
   background-color: #ec7243;
   width: 100%;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(182, 182, 182);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(182, 182, 182);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(182, 182, 182);
 }
