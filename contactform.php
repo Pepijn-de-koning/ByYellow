@@ -15,6 +15,8 @@ if (isset($_POST['submit'])) {
 
     $to = "29118@ma-web.nl";
 
+    $headers = "From: $firstname \r\n";
+    $headers = "From: $lastname \r\n";
     $headers = "From: $visitor_email \r\n";
 
     $headers .= "Reply-To: $visitor_email \r\n";

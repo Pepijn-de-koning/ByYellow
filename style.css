@@ -262,6 +262,7 @@ p {
 
 input {
   margin-bottom: 50px;
+  width: 100%;
 }
 
 label {
@@ -277,14 +278,14 @@ label {
 }
 
 textarea {
-  padding: 25px 250px 200px 25px;
   border-radius: 5px;
   border: none;
   font-size: 18px;
+  padding: 10px 0px 250px 10px;
 }
 
 .textareas {
-  margin: 125px 100px;
+  margin: 108px 400px 0px 100px;
 }
 
 .onderwerp {
@@ -294,7 +295,6 @@ textarea {
 
 .submit {
   text-align: center;
-  margin: 30px 0px 0px 200px;
   padding: 10px 25px 10px 25px;
   border-radius: 5px;
   border: solid;
@@ -589,6 +589,7 @@ textarea {
   left: 0;
   right: 0;
 }
+
 .loading .icon {
   content: "";
   position: fixed;
@@ -596,8 +597,8 @@ textarea {
   height: 50px;
   top: 50%;
   left: 50%;
-  margin-top: -25px; /* Negative half of height. */
-  margin-left: -25px; /* Negative half of width. */
+  margin-top: -25px;
+  margin-left: -25px;
   background: #ec7243;
   border-radius: 100%;
   z-index: 99;
