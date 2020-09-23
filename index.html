@@ -198,29 +198,25 @@
         <a class="cases">lets talk<span class="yellow">.</span></a>
       </div>
 
-      <form class="contact-form margin-bottom" action="contactform.php" method="post">
-
-        <div class="contact-informatie">
-          <div class="inputs">
-            <label for="fname">First Name</label> <br>
-            <input class="persoons-informatie" type="text" id="fname" name="firstname" placeholder="Your name.."> <br>
-
-            <label for="lname">Last Name</label> <br>
-            <input class="persoons-informatie" type="text" id="lname" name="lastname" placeholder="Your last name.."> <br>
-
-            <label for="lname">email</label> <br>
-            <input class="persoons-informatie" type="text" id="email" name="email" placeholder="Your last name.."> <br>
+        <form action="contactform.php" method="post" class="contact-form margin-bottom">
+          <div class="contact-informatie">
+            <div class="inputs">
+              <label for="fname">First Name</label> <br>
+              <input class="persoons-informatie" name="firstname" placeholder="Uw voornaam.."> <br>
+              <label for="lname">Last Name</label> <br>
+              <input class="persoons-informatie" name="lastname" placeholder="Uw achernaam"> <br>
+              <label for="lname">email</label> <br>
+              <input class="persoons-informatie" name="email" placeholder="Uw email adres"> <br>
+            </div>
           </div>
-        </div>
-
-        <div class="onderwerp">
-          <div class="textareas">
-            <label for="subject">Subject</label> <br>
-            <textarea id="subject" name="subject" placeholder="Whats on your mind.."></textarea> <br>
-            <input class="submit" type="submit" value="Submit">
+          <div class="onderwerp">
+            <div class="textareas">
+              <label for="subject">Uw bericht</label> <br>
+              <textarea id="subject" name="subject" style="resize: none;" placeholder="Whats on your mind.."></textarea> <br>
+              <input class="submit" name="submit" type="submit" value="submit">
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
       </div>
     </section>
 
