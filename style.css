@@ -37,6 +37,12 @@ body {
 }
 /* end overall */
 
+/* menu button */
+.toggler {
+  max-width: 4.5em;
+}
+/* end menu button */
+
 /* figuren */
 .figuren {
   margin-top: -400px;
